@@ -1,0 +1,426 @@
+{
+	"info": {
+		"_postman_id": "483fa341-ce91-4fdf-8c98-d992e03c3b74",
+		"name": "Robosos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25954235"
+	},
+	"item": [
+		{
+			"name": "getAllUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idUser\": 1,\r\n  \"name\": \"mike\",\r\n  \"email\": \"unnamemik@gmail.com\",\r\n  \"hash_password\": \"mysuperpass\",\r\n  \"is_active\": true,\r\n  \"token\": \"cf5hd4f5j43cf5g4h3c1h35\",\r\n  \"activation_key\": \"cf5hd4f5j43cf5g4h3c1h35\",\r\n  \"created_at\": \"10.10.2023\",\r\n  \"updated_at\": \"10.10.2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/users/{user_id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"{user_id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUserById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idUser\": 1,\r\n  \"name\": \"mike\",\r\n  \"email\": \"unnamemik@gmail.com\",\r\n  \"hash_password\": \"mysuperpass\",\r\n  \"is_active\": true,\r\n  \"token\": \"cf5hd4f5j43cf5g4h3c1h35\",\r\n  \"activation_key\": \"cf5hd4f5j43cf5g4h3c1h35\",\r\n  \"created_at\": \"10.10.2023\",\r\n  \"updated_at\": \"10.10.2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/users/{user_id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"{user_id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUserById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/users/{user_id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"{user_id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllRobots",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/robots",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"robots"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createRobot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Robot_id\": 1,\r\n  \"Name\": \"robot_no_1\",\r\n  \"Model\": \"kiborg30035\",\r\n  \"IP_address\": \"192.168.0.1\",\r\n  \"MAC_address\": \"00:01:E3:F4:6D:C3\",\r\n  \"Soft_version\": \"1024\",\r\n  \"Status\": \"1024\",\r\n  \"Settings_set\": \"1024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/robots/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"robots",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRobotById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/robots/{robot_id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"robots",
+						"{robot_id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateRobotById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Robot_id\": 1,\r\n  \"Name\": \"robot_no_1\",\r\n  \"Model\": \"kiborg30035\",\r\n  \"IP_address\": \"192.168.0.1\",\r\n  \"MAC_address\": \"00:01:E3:F4:6D:C3\",\r\n  \"Soft_version\": \"1024\",\r\n  \"Status\": \"1024\",\r\n  \"Settings_set\": \"1024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/robots/{robot_id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"robots",
+						"{robot_id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteServerById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/robots/{robot_id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"robots",
+						"{robot_id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getServerById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/server/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"server",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createConfig",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Name\": \"Robosos\",\r\n  \"Robot_id\": 1,\r\n  \"User_id\": 1,\r\n  \"Vendor_id\": \"1024\",\r\n  \"Status\": \"1024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/server/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"server",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateServerById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Name\": \"Robosos\",\r\n  \"Robot_id\": 1,\r\n  \"User_id\": 1,\r\n  \"Vendor_id\": \"1024\",\r\n  \"Status\": \"1024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/server/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"server",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
