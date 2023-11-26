@@ -1,0 +1,52 @@
+
+users {
+	id int pk increments
+	name varchar(255)
+	email varchar(255)
+	password varchar(60)
+	active tinyint(1)
+	activation_key varchar(32)
+	remember_token varchar(32)
+	created_at timestamp
+	updated_at timestamp
+}
+
+groups {
+	id int pk increments
+	name int
+	description varchar(255)
+	created_at timestamp
+	permissions int > permissions.id
+}
+
+robot {
+	id int pk increments
+	name varchar
+	model varchar
+	IP_address varchar
+	MAC_address varchar
+	soft_version varchar
+	status int >* statistic.id
+	settings_set integer >* settings.id
+}
+
+role_user {
+	user_id int(10) > users.id
+	group_id int(10) > groups.id
+}
+
+server {
+	id int pk increments
+	robot_id int >* robot.id
+	user_id int >* users.id
+	name text
+	vendor_id text >* vendor.id
+	status int(1)
+}
+
+permissions {
+	id integer pk increments
+	name varchar
+	permission_lvl integer
+}
+
